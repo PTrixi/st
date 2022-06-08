@@ -18,7 +18,8 @@ static char *font2[] = {
 			"Source Han Sans JP ExtraLight:pixelsize=16:antialias=true:autohint=true",
 			"Source Han Sans JP Medium:pixelsize=16:antialias=true:autohint=true",
 			"Source Han Sans JP Heavy:pixelsize=16:antialias=true:autohint=true",
-			"Source Han Sans JP Light:pixelsize=16:antialias=true:autohint=true"
+			"Source Han Sans JP Light:pixelsize=16:antialias=true:autohint=true",
+			"Twemoji:pixelsize=12:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -128,15 +129,18 @@ float alphaUnfocus;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
+	/* "#cc241d", */		/* Full Red */
+	"#8E58A4",
 	"#98971a",
-	"#d79921",
+	/* "#d79921", */		/* Orange */
+	"#4A83BF",		/* Blue */
 	"#458588",
 	"#b16286",
 	"#689d6a",
 	"#a89984",
 	"#928374",
-	"#fb4934",
+	"#fb4934",			/* Red */
+	/* "#8E58A4", */		/* Purple */
 	"#b8bb26",
 	"#fabd2f",
 	"#83a598",
@@ -147,7 +151,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#000000", /* 258 -> bg */
+	"#070707", /* 258 -> bg */
 	"#ebdbb2", /* 259 -> fg */
 };
 
